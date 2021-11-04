@@ -24,3 +24,10 @@ body {
     width: 250px;
     display: none;
 }
+
+.container button {
+    background: crimson;
+    padding: 10px;
+    border: none;
+    color: white;
+}
