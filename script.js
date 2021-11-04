@@ -40,5 +40,14 @@ let interval = setInterval(function() {
     }
 });
 
+let button = document.querySelector("#btn");
+let now = new Date().getHours;
+
+let runCount = () => {
+    console.log(now);
+};
+
+button.addEventListener("click", runCount);
+
 console.log(today);
 console.log(countDownDate);
