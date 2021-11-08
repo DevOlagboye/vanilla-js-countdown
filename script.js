@@ -41,12 +41,16 @@ let interval = setInterval(function() {
 });
 
 let button = document.querySelector("#btn");
-let now = new Date().getHours;
+let now = new Date().getHours();
+let hDistance = now + 6;
 
 let runCount = () => {
-    console.log(now);
+    let hHours = hDistance;
+    const hSeconds = Math.floor(hDistance) % 60;
+    let hMinutes = Math.floor(hDistance / 60) % 60;
+    console.log(hHours, hMinutes, hSeconds);
 };
-
+//setInterval(runCount, 1000);
 button.addEventListener("click", runCount);
 
 console.log(today);
