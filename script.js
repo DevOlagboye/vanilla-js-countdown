@@ -55,8 +55,10 @@ let countDown = () => {
         let Hseconds = hDistance % 60;
         //console.log(now, hDistance, Hhours, Hminutes, Hseconds);
         button.innerHTML = Hhours + " h " + Hminutes + " m " + Hseconds + " s ";
+        button.setAttribute("disabled", "disabled");
         if (hDistance < 0) {
             clearInterval(runCount);
+            button.innerHTML = "Submit";
         }
     }, 1000);
 };
